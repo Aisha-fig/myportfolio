@@ -1,5 +1,6 @@
 body {
     background-color: #141518;
+    border: 2px solid red;
 }
 
 * {
@@ -37,6 +38,26 @@ header {
     font-size: 35px;
     margin-left: 25px;
 }
+
+/* media query for header */
+@media (max-width: 1024px) {
+    header {
+        margin: 0px 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        margin: 0px 50px;
+    }
+}
+
+@media (max-width: 425px) {
+    header {
+        margin: 0px 27px;
+    }
+}
+
 
 .hero {
     background: url(./Images/hero.png) no-repeat center center;
@@ -76,6 +97,47 @@ p {
     line-height: 35px;
     font-size: 23px;
     font-weight: 100;
+}
+/* media query fr hero section */
+@media(max-width: 1024px){
+    .herocontent {
+        max-width: 750px;
+        padding-bottom: 60px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 21px;
+    }
+}
+
+@media(max-width: 768px){
+    h1{
+        font-size: 35px; 
+    }
+    p {
+        font-size: 19px
+    }
+    .herocontent {
+        max-width: 650px;
+        padding-bottom: 50px;
+    }
+}
+
+@media(max-width: 425px){
+    .herocontent {
+        max-width: 300px;
+        padding-bottom: 160px;
+    }
+    h1 {
+        font-size: 30px;
+        font-weight: 200px;
+        margin-top: 50px;
+    }
+    p {
+        font-size: 16px;
+    }
 }
 
 span {
@@ -132,6 +194,38 @@ h2 {
     color: white;
 }
 
+/* media query for porthigh */
+@media (max-width: 1024px) {
+    .port-high, .section-two, .sectionthree-group  {
+        margin: 0px 100px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .port-high, .section-two, .sectionthree-group  {
+        margin: 0px 50px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    .headlines {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 425px) {
+    .port-high, .section-two, .sectionthree-group  {
+        margin: 0px 27px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+}
+
 .coopera-card, .techstudiohr-card, .mediqmart-card, .bytealley-card {
     width: 100%;
     padding: 25px;
@@ -149,6 +243,7 @@ h2 {
 .coop-title {
     font-size: 25px;
     margin: 0;
+    color: white;
     
 }
 
@@ -199,6 +294,53 @@ h2 {
     gap: 20px;
 }
 
+/* media query for card group */
+@media (max-width: 1024px) {
+    .coop-title {
+        font-size: 20px;
+    }
+    .coop-sub {
+        font-size: 17px;
+    }
+    .tag-p {
+        font-size: 15px;
+    }
+    .tag-one {
+        padding: 5px 10px;
+        border-radius: 30px;
+        width: 130px;
+    }
+    .coop-para {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .coop-title {
+        font-size: 18px;
+    }
+    .coop-sub {
+        font-size: 15px;
+    }
+    .tag-p {
+        font-size: 12px;
+    }
+    .tag-one {
+        border-radius: 30px;
+        width: 100px;
+    }
+    .coop-para {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 425px) {
+    .cardgroup {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 .more-aboutme {
     text-align: left;
     padding-bottom: 30px;
@@ -246,6 +388,38 @@ hr {
     overflow-y: auto;
     max-height:500px;
     width: 700px;
+}
+
+/* media query for scroll section */
+@media (max-width: 1024px) {
+    .sectiontwo-group {
+        gap: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectiontwo-group {
+        gap: 150px;
+    }
+    .more-aboutme, .stat-details, h3, .fineface-para {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 425px) {
+    .sectiontwo-group {
+        gap: 50px;
+        flex-direction: column;
+    }
+    .more-aboutme, .stat-details, h3, .fineface-para {
+        font-size: 16px !important; 
+    }
+    .scroll-section {
+        width: 100%;
+    }
+    .fineface-para {
+        font-size: 16px;
+    }
 }
 
 .myfineface {
@@ -298,6 +472,48 @@ h4 {
     font-size: 20px;
 }
 
+/* media query for services */
+@media (max-width: 1024px) {
+    .headlines-service {
+        width: 510px;
+    }
+    .service {
+        gap: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .headlines-service {
+        width: 400px;
+    }
+    .service {
+        gap: 50px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .service-details, .service-title, .service-titletop {
+        font-size: 17px !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .headlines-service {
+        width: 400px;
+    }
+    .service {
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 80px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    .service-details, .service-title, .service-titletop {
+        font-size: 16px !important;
+    }
+}
+
 .sectionthree-group {
     margin-top: 100px
 }
@@ -333,6 +549,18 @@ h4 {
     
 }
 
+/* media query for testimonials */
+@media (max-width: 425px) {
+    .slidercard-detail {
+        font-size: 15px;
+        height: 250px;
+
+    }
+    .slider-card {
+        flex: 0 0 320px;
+    }
+}
+
 .slidercard-title {
     padding-top: 10px;
 }
@@ -352,7 +580,7 @@ h4 {
 
 .footer {
     background: url(./Images/footer.png) no-repeat center center;
-    height: 650px;
+    /* height: 650px; */
     position: relative;
     background-size: cover;
     overflow: hidden;
@@ -410,6 +638,71 @@ h4 {
     align-items: top;
 }
 
+/* media query for footer */
+@media (max-width: 768px) {
+    .footer-content {
+        margin: 50px 50px 50px 50px;
+    }
+    .footerpara {
+        font-size: 18px;
+    }
+    .footertitle {
+        font-size: 30px;
+    }
+    .links {
+        font-size: 18px !important;
+    }
+    .footer-title-para {
+        padding-bottom: 30px;
+
+    }
+    .linksgroup {
+        justify-content: center;
+    }
+}
+@media (max-width: 425px) {
+    .footer-content {
+        margin: 50px 50px 50px 50px;
+    }
+    .footerpara {
+        font-size: 16px;
+        width: auto;
+        
+    }
+    .footertitle {
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .links {
+        font-size: 18px !important;
+    }
+    .footer-title-para {
+        padding-bottom: 30px;
+        width: 300px;
+    }
+    .footerlinks {
+        grid-template-columns: 1fr 1fr !important;
+        width: 300px !important;
+    }
+    .linksgroup {
+        justify-content: center;
+    }
+    .footerlinks-group {
+        flex-direction: column;
+        gap: 0px;
+    }
+    .footer-nametag {
+        align-items: center;
+    }
+    .footer-sub, .footerlinks-sub {
+        font-size: 15px !important;
+    }
+    .footerlinks-sub {
+        text-align: center !important;
+    }
+}
+
+
 .links {
     font-size: 22px;
     height: 28px;
@@ -439,11 +732,13 @@ h4 {
 
 .footerlinks {
     width: 600px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: space-between;
     gap: 20px;
     height: 36px;
-    margin: 50px 175px 0 175px;
+    /* margin: 50px 175px 0 175px; trbl */
+    margin: 50px auto ;
 }
 
 .footerlinks-sub {
