@@ -433,11 +433,18 @@ hr {
     text-align: left;
 }
 
-.scroll-section {
+.sectiontwo-group {
     overflow-y: auto;
-    max-height:500px;
-    width: 700px;
+    max-height:100vh;
+    /* width: 765px; */
 }
+
+.scroll-section {
+    width: 765px;
+}
+
+
+
 
 /* media query for scroll section */
 @media (max-width: 1024px) {
@@ -774,6 +781,7 @@ h4 {
 .linksgroup {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
     height: 28px;
     color: white;
